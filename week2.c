@@ -56,5 +56,35 @@ int main(){
     asciiart();
     header();
     char response[20];
+    while(strcmp(response, "exit") != 0){   
+        white();
+        printf("Enter a command: ");
+        scanf("%s", response);
+        if (strcmp(response, "clear") == 0){
+            clear();
+            }
+        else if(strcmp(response, "exit") == 0){
+            break;
+            }
+        else if(strcmp(response, "initialize") == 0){
+            initialize();
+            }
+        else if(strcmp(response, "screen") == 0){
+            screen();
+            }
+        else if(strcmp(response, "scheduler-test") == 0){
+            schedulertest();
+            }
+        else if(strcmp(response, "scheduler-stop") == 0){
+            schedulerstop();
+            }
+        else if(strcmp(response, "report-util") == 0){
+            reportutil();
+            }
+        else
+            printf("Invalid command... \n");
+        }
+
+
     return 0;
 }
