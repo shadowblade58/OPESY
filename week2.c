@@ -51,6 +51,31 @@ void header(){
     printf("Type 'exit' to quit, 'clear' to clear the screen\n");
 }
 
+//CLEAR COMMAND
+void clear(){
+    system("cls");
+    header();
+}
+//INITIALIZE COMMAND
+void initialize(){
+    printf("Initialize command recognized. Doing something...\n"); 
+}
+//SCREEN COMMAND
+void screen(){
+    printf("Screen command recognized. Doing something...\n");  
+}
+//SCHEDULER TEST COMMAND
+void schedulertest(){
+    printf("Scheduler-test command recognized. Doing something...\n");  
+}
+//SCHEDULER STOP COMMAND
+void schedulerstop(){
+    printf("Scheduler-stop command recognized. Doing something...\n");  
+}
+//REPORT UTIL COMMAND
+void reportutil(){
+    printf("Report-util command recognized. Doing something...\n");  
+}
 
 int main(){
     asciiart();
