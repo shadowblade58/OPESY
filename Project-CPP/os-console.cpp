@@ -5,7 +5,10 @@ Group 1: Ching, Donato, Harder, Javier
 
 #include <iostream>
 #include <cstring>
-using namespace std;
+
+using std::cout;
+using std::cin;
+using std::string;
 
 //COLORS FOR PRINTING
 void black(){
