@@ -4,7 +4,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
-#include "ConsoleManager.cpp"
+#include "ConsoleManager.h"
+#include "InputManager.h"
 
 using std::cout;
 using std::cin;
