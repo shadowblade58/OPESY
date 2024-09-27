@@ -9,6 +9,27 @@ Group 1: Ching, Donato, Harder, Javier
 #include <time.h>
 #include <windows.h>
 
+typedef struct {
+    char name[20];
+    SYSTEMTIME timestamp;
+    int instruction_line; // Placeholder for current instruction line
+} Screen;
+Screen currentScreen;
+int isScreenActive = 0;
+// Initialize screen data
+void initializeScreen(Screen* screen, const char* name) {
+    strcpy(screen->name, name);
+    GetLocalTime(&(screen->timestamp));
+    screen->instruction_line = 1;  // Placeholder: Always start at instruction 1
+}
+
+// Print screen information
+void printScreenInfo(Screen* screen) {
+    printf("There is a screen on:\n\t%s\t", screen->name);
+    printf("Current instruction line: %d/50\n", screen->instruction_line); // Placeholder
+    showTimestamp();
+    printf("\t (Attached)\n");
+}
 //COLORS FOR PRINTING
 void black(){
     printf("\033[0;30m");
