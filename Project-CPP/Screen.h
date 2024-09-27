@@ -17,11 +17,3 @@ private:
     bool refreshed = false;
 
 };
-
-Screen::Screen(/* args */)
-{
-}
-
-Screen::~Screen()
-{
-}
